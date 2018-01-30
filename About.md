@@ -138,7 +138,7 @@ ECharts, abbreviated from Enterprise Charts, a business-grade data chart, a pure
 
 pyecharts is a class library for generating Echarts charts. With pyEcharts, you can translate Python code directly into Echarts JavaScript code, simplifying the integration of Echarts and Python projects. pyecharts can be very easy and Flask integration, it is entirely possible to use Flask call pyecharts dynamically generated charts while inserting other html elements, returned to the browser.
 #### Bootstrap
-![bootstrap] (./images/bootstrap.png)
+![bootstrap](./images/bootstrap.png)
 
 Bootstrap is a set of open source frontend for the development of websites and web applications (so-called "frontend," which refers to the interface that is presented to the end user. The corresponding "backend" is the code that runs on the server) HTML, CSS and JavaScript framework to provide typography, forms, buttons, navigation, and other various components and Javascript extensions designed to make the development of dynamic web and web applications easier.
 
