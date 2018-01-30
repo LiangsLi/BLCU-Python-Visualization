@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<!-- saved from url=(0197)file:///E:/Codes/%E5%94%90%E8%AF%97%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96/bootstrap%E6%A8%A1%E6%9D%BF/%E8%B5%B7%E6%AD%A5%20%C2%B7%20Bootstrap%20v3%20%E4%B8%AD%E6%96%87%E6%96%87%E6%A1%A3.html -->
+<html lang="zh-CN">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Liangs">
+    <title>
+        关于我们
+    </title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+
+
+    <!-- Documentation extras -->
+    <link href="{{ url_for('static', filename='css/docs.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/patch.css') }}" rel="stylesheet">
+    <!--[if lt IE 9]><script src="../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="{{ url_for('static', filename='js/ie-emulation-modes-warning.js') }}"></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+  <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+    <!-- Favicons -->
+    <link rel="icon" href="{{ url_for('static', filename='images/favicon.ico') }}">
+    <script>
+        var _hmt = _hmt || [];
+    </script>
+    <style id="style-1-cropbar-clipper">/* Copyright 2014 Evernote Corporation. All rights reserved. */
+    .en-markup-crop-options {
+        top: 18px !important;
+        left: 50% !important;
+        margin-left: -100px !important;
+        width: 200px !important;
+        border: 2px rgba(255, 255, 255, .38) solid !important;
+        border-radius: 4px !important;
+    }
+
+    .en-markup-crop-options div div:first-of-type {
+        margin-left: 0px !important;
+    }
+    </style>
+</head>
+<body>
+<a id="skippy" class="sr-only sr-only-focusable" href="http://v3.bootcss.com/getting-started/#content">
+    <div class="container"><span class="skiplink-text">Skip to main content</span></div>
+</a>
+
+<!-- Docs master nav -->
+<header class="navbar navbar-static-top bs-docs-nav" id="top">
+    <div class="container">
+        <div class="navbar-header">
+            <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#bs-navbar"
+                    aria-controls="bs-navbar" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="/" class="navbar-brand">唐诗数字</a>
+        </div>
+       <nav id="bs-navbar" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li class="active">
+                    <a href="/"
+                       onclick="_hmt.push([&#39;_trackEvent&#39;, &#39;docv3-navbar&#39;, &#39;click&#39;, &#39;首页&#39;])">首页</a>
+                </li>
+                <li>
+                    <a href="{{ url_for('shuowenjiezi') }}"
+                       onclick="_hmt.push([&#40;_trackEvent&#40;, &#40;docv3-navbar&#40;, &#40;click&#40;, &#40;说文解字&#40;])">说文解字</a>
+                </li>
+                <li>
+                    <a href=""
+                       onclick="_hmt.push([&#39;_trackEvent&#39;, &#39;docv3-navbar&#39;, &#39;click&#39;, &#39;唐诗词林&#39;])">沧海词话</a>
+                </li>
+                <li>
+                    <a href="{{ url_for('shirenguanxi') }}"
+                       onclick="_hmt.push([&#39;_trackEvent&#39;, &#39;docv3-navbar&#39;, &#39;click&#39;, &#39;桃花潭水&#39;])">天涯比邻</a>
+                </li>
+                <li>
+                    <a href="{{ url_for('sichouzhilu') }}"
+                       onclick="_hmt.push([&#39;_trackEvent&#39;, &#39;docv3-navbar&#39;, &#39;click&#39;, &#39;关于我们&#39;])">丝绸唐韵</a>
+                </li>
+                <li>
+                    <a href="{{ url_for('about') }}"
+                       onclick="_hmt.push([&#39;_trackEvent&#39;, &#39;docv3-navbar&#39;, &#39;click&#39;, &#39;关于我们&#39;])">关于我们</a>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <!-- <li><a href="http://mb.bootcss.com" onclick="_hmt.push(['_trackEvent', 'docv3-navbar', 'click', 'themes'])" target="_blank">主题/模板</a></li> -->
+                <li><a href=""
+                       onclick="_hmt.push([&#39;_trackEvent&#39;, &#39;docv3-navbar&#39;, &#39;click&#39;, &#39;&#39;])"
+                       target="_blank">github</a></li>
+                <li><a href=""
+                       onclick="_hmt.push([&#39;_trackEvent&#39;, &#39;docv3-navbar&#39;, &#39;click&#39;, &#39;&#39;])"
+                       target="_blank">ENGLISH</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<!-- Docs page layout -->
+<div class="bs-docs-header" id="content" tabindex="-1">
+    <div class="container">
+        <h1>关于我们&nbsp;٩(๑❛ᴗ❛๑)۶</h1>
+        <p>我们是谁？？&nbsp;我们做了什么？？&nbsp;我们怎么做的？？</p>
+    </div>
+</div>
+
+<div class="container bs-docs-container">
+    <div class="row">
+
+        <div class="col-md-9" role="main">
+
+            <div class="bs-docs-section">
+                <h1 id="我是ID1" class="page-header"><a class="anchorjs-link " href="#我是ID1"
+                                                      aria-label="Anchor link for: BT2" data-anchorjs-icon=""
+                                                      style="font-family: anchorjs-icons; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; line-height: inherit; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>
+                    <a class="anchorjs-link " href="#我是ID1" aria-label="Anchor link for: third parties"
+                       data-anchorjs-icon="" style="font-family: anchorjs-icons;
+                                        font-style: normal; font-variant-ligatures: normal;
+                                        font-variant-caps: normal; font-weight: normal;
+                                        line-height: inherit; position: absolute; margin-left: -1em;
+                                        padding-right: 0.5em;">
+                    </a>项目简介
+                </h1>
+                <img src="{{ url_for('static', filename='images/about/poem.png') }}" alt="poetry_analyzer"
+                     class="img-responsive">
+                <p class="lead"><a href="https://baike.baidu.com/item/%E5%94%90%E8%AF%97/21033">唐诗</a>泛指创作于唐朝的诗。唐诗是中华民族最珍贵的文化遗产之一，是中华文化宝库中的一颗明珠，
+                    同时也对世界上许多民族和国家的文化发展产生了很大影响，对于后人研究唐代的政治、民情、风俗、文化等都有重要的参考意义和价值。</p>
+                <h2 id="我是ID1.1"><a class="anchorjs-link " href="#我是ID1.1"
+                                    aria-label="Anchor link for: third box sizing" data-anchorjs-icon=""
+                                    style="font-family: anchorjs-icons; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; line-height: inherit; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>
+                    <a class="anchorjs-link " href="#我是ID1.1" aria-label="Anchor link for: third box sizing"
+                       data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal;
+                                    font-variant-ligatures: normal; font-variant-caps: normal;
+                                    font-weight: normal; line-height: inherit; position: absolute;
+                                    margin-left: -1em; padding-right: 0.5em;">
+
+                    </a>项目目标
+                </h2>
+                <p>唐诗风采的变化也直观地反映出不同文明之间的相交相融。
+                    <a href="https://baike.baidu.com/item/%E4%B8%9D%E7%BB%B8%E4%B9%8B%E8%B7%AF/434">丝绸之路</a>上的贸易除了丝绸织物以外，也带去了华夏民族先进的农耕技术与器具，推动着丝绸之路上的游牧文明向农耕文明的过渡。
+                    王建《凉州行》——<code>“蕃人旧日不耕犁，相学如今种禾黍。驱羊亦著锦为衣，为惜毡裘防斗时”</code>，
+                    就反映了丝绸之路上的游牧民族织衣耕种的新生活。丝绸之路贸易的繁荣还刺激了游牧民族畜牧业和商业的迅速发展，
+                    白居易《阴山道》——<code>“五十匹缣易一匹，缣去马来无了日”</code>，说的就是中唐以来丝绸之路游牧民族与唐王朝频繁的马绢贸易，
+                    当时的私人贸易量达到了惊人的程度。</p>
+                <p>本项目目标如下：</p>
+                <p>1、 通过对<a href="https://baike.baidu.com/item/%E5%85%A8%E5%94%90%E8%AF%97">《全唐诗》</a>语言文字的数据统计，研究分析唐诗用字用词的特点和感情色彩；
+                </p>
+                <p>2、 借助<a href="https://projects.iq.harvard.edu/cbdb/home">中国历代人物传记资料库CBDB</a>唐代诗人的人际关系</p>
+                <p>3、 对 <a href="https://baike.baidu.com/item/%E4%B8%9D%E7%BB%B8%E4%B9%8B%E8%B7%AF/434">丝绸之路</a>沿线唐诗进行分类分析，研究丝绸之路上唐诗的特点变化和唐代主要商贸城市的风貌
+                </p>
+                <h2 id="我是ID1.2"><a class="anchorjs-link " href="#我是ID1.2"
+                                    aria-label="Anchor link for: third box sizing" data-anchorjs-icon=""
+                                    style="font-family: anchorjs-icons; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; line-height: inherit; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>
+                    <a class="anchorjs-link " href="#我是ID1.2" aria-label="Anchor link for: third box sizing"
+                       data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal;
+                                    font-variant-ligatures: normal; font-variant-caps: normal;
+                                    font-weight: normal; line-height: inherit; position: absolute;
+                                    margin-left: -1em; padding-right: 0.5em;">
+
+                    </a>小组成员
+                </h2>
+                <div style="text-align:center;">
+                    <span style="font-size:16px;">李华勇&nbsp; &nbsp; 201721198598</span>
+                </div>
+                <div style="text-align:center;">
+                    <br/>
+                </div>
+                <div style="text-align:center;">
+                    <span style="font-size:16px;">朱思齐&nbsp; &nbsp; 201721198500</span>
+                </div>
+                <div style="text-align:center;">
+                    <br/>
+                </div>
+                <div style="text-align:center;">
+                    <span style="font-size:16px;">申资卓&nbsp; &nbsp; 201721198500</span>
+                </div>
+                <div style="text-align:center;">
+                    <br/>
+                </div>
+                <div style="text-align:center;">
+                    <span style="font-size:16px;">程&nbsp; &nbsp;玥&nbsp; &nbsp; 201721198500</span>
+                </div>
+                <h2 id="我是ID1.3"><a class="anchorjs-link " href="#我是ID1.3"
+                                    aria-label="Anchor link for: third box sizing" data-anchorjs-icon=""
+                                    style="font-family: anchorjs-icons; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; line-height: inherit; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>
+                    <a class="anchorjs-link " href="#我是ID1.3" aria-label="Anchor link for: third box sizing"
+                       data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal;
+                                    font-variant-ligatures: normal; font-variant-caps: normal;
+                                    font-weight: normal; line-height: inherit; position: absolute;
+                                    margin-left: -1em; padding-right: 0.5em;">
+
+                    </a>本网站技术栈简介
+                </h2>
+                <img src="{{ url_for('static', filename='images/about/jishu.png') }}" alt="poetry_analyzer"
+                     class="img-responsive">
+                <p>本项目后台基于<code>Flask</code>框架，数据显示部分使用<code>pyEcharts</code>，前端使用<code>Bootstrap</code>进行界面美化。下面简单介绍下这几个技术：
+                </p>
+                <h3 id="我是ID1.3.1"><a class="anchorjs-link " href="#我是ID1.3.1"
+                                    aria-label="Anchor link for: third box sizing" data-anchorjs-icon=""
+                                    style="font-family: anchorjs-icons; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; line-height: inherit; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>
+                    <a class="anchorjs-link " href="#我是ID1.3.1" aria-label="Anchor link for: third box sizing"
+                       data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal;
+                                    font-variant-ligatures: normal; font-variant-caps: normal;
+                                    font-weight: normal; line-height: inherit; position: absolute;
+                                    margin-left: -1em; padding-right: 0.5em;">
+
+                    </a>Flask
+                </h3>
+                <p>Flask是一个使用Python编写的轻量级Web应用框架。基于Werkzeug WSGI(PythonWeb服务器网关接口（Python Web Server Gateway
+                    Interface，缩写为WSGI)
+                    是Python应用程序或框架和Web服务器之间的一种接口，已经被广泛接受, 它已基本达成它的可移植性方面的目标)
+                    工具箱和Jinja2 模板引擎。 Flask使用BSD授权。 Flask也被称为“microframework”，因为它使用简单的核心，
+                    用extension增加其他功能。Flask没有默认使用的数据库、窗体验证工具。
+                    然而，Flask保留了扩增的弹性，可以用Flask-extension加入这些功能：ORM、窗体验证工具、文件上传、
+                    各种开放式身份验证技术。</p>
+                <p>安装Flask：</p>
+                <figure class="highlight">
+                <pre><code class="language-scss" data-lang="bsh">
+                        pip install flask
+                </code></pre>
+                </figure>
+                <p>Flask的简单应用：</p>
+                <figure class="highlight">
+                <pre><code class="language-scss" data-lang="python">
+                        from flask import Flask
+                        app = Flask(__name__)
+                         @app.route("/")
+                        def hello():
+                            return "Hello World!"
+
+                        if __name__ == "__main__":
+                            app.run()
+                </code></pre>
+                </figure>
+                <h3 id="我是ID1.3.2"><a class="anchorjs-link " href="#我是ID1.3.2"
+                                    aria-label="Anchor link for: third box sizing" data-anchorjs-icon=""
+                                    style="font-family: anchorjs-icons; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; line-height: inherit; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>
+                    <a class="anchorjs-link " href="#我是ID1.3.2" aria-label="Anchor link for: third box sizing"
+                       data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal;
+                                    font-variant-ligatures: normal; font-variant-caps: normal;
+                                    font-weight: normal; line-height: inherit; position: absolute;
+                                    margin-left: -1em; padding-right: 0.5em;">
+
+                    </a>pyEcharts
+                </h3>
+                <p>ECharts，缩写来自Enterprise Charts，商业级数据图表，一个纯Javascript的图表库，
+                    可以流畅的运行在PC和移动设备上，兼容当前绝大部分浏览器
+                    （IE6/7/8/9/10/11，chrome，firefox，Safari等），底层依赖轻量级的Canvas类库ZRender，
+                    提供直观，生动，可交互，可高度个性化定制的数据可视化图表。创新的拖拽重计算、数据视图、
+                    值域漫游等特性大大增强了用户体验，赋予了用户对数据进行挖掘、整合的能力。</p>
+                <p>pyecharts 是一个用于生成 Echarts 图表的类库。
+                    使用pyEcharts可以直接将Python代码转化为Echarts的JavaScript代码，简化Echarts和Python项目的集成。
+                    pyecharts可以非常方便地和Flask集成，完全可以使用Flask调用pyecharts动态生成图表同时插入其他html元素，返回给浏览器。
+                </p>
+
+                <h3 id="我是ID1.3.3"><a class="anchorjs-link " href="#我是ID1.3.3"
+                                    aria-label="Anchor link for: third box sizing" data-anchorjs-icon=""
+                                    style="font-family: anchorjs-icons; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; line-height: inherit; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>
+                    <a class="anchorjs-link " href="#我是ID1.3.3" aria-label="Anchor link for: third box sizing"
+                       data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal;
+                                    font-variant-ligatures: normal; font-variant-caps: normal;
+                                    font-weight: normal; line-height: inherit; position: absolute;
+                                    margin-left: -1em; padding-right: 0.5em;">
+
+                    </a>Bootstrap
+                </h3>
+                <p>Bootstrap是一组用于网站和网络应用程序开发的开源前端（所谓“前端”，指的是展现给最终用户的界面。
+                    与之对应的“后端”是在服务器上面运行的代码）框架，包括HTML、CSS及JavaScript的框架，提供字体排印、
+                    窗体、按钮、导航及其他各种组件及Javascript扩展，旨在使动态网页和Web应用的开发更加容易。</p>
+                <p>要在Flask中使用BootStrap需要借助Flask-Bootstrap扩展。
+                    Flask-Bootstrap 把 Bootstrap 打包进一个 扩展，这个扩展主要由一个叫
+                    “bootstrap”的蓝本（blueprint）组成。它也可以创建链接从一个CDN上引用Bootstrap。</p>
+            </div>
+            <div class="bs-docs-section">
+                <h1 id="我是ID2" class="page-header"><a class="anchorjs-link " href="#我是ID2"
+                                                      aria-label="Anchor link for: BT2" data-anchorjs-icon=""
+                                                      style="font-family: anchorjs-icons; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; line-height: inherit; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>
+                    <a class="anchorjs-link " href="#我是ID2" aria-label="Anchor link for: third parties"
+                       data-anchorjs-icon="" style="font-family: anchorjs-icons;
+                                        font-style: normal; font-variant-ligatures: normal;
+                                        font-variant-caps: normal; font-weight: normal;
+                                        line-height: inherit; position: absolute; margin-left: -1em;
+                                        padding-right: 0.5em;">
+                    </a>我们的处理过程
+                </h1>
+                <p class="lead">下面从数据获取与处理、Flask、pyecharts、bootstrap四个方面介绍我们的处理过程。</p>
+                <h2 id="我是ID2.1"><a class="anchorjs-link " href="#我是ID2.1"
+                                    aria-label="Anchor link for: third box sizing" data-anchorjs-icon=""
+                                    style="font-family: anchorjs-icons; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; line-height: inherit; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>
+                    <a class="anchorjs-link " href="#我是ID2.1" aria-label="Anchor link for: third box sizing"
+                       data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal;
+                                    font-variant-ligatures: normal; font-variant-caps: normal;
+                                    font-weight: normal; line-height: inherit; position: absolute;
+                                    margin-left: -1em; padding-right: 0.5em;">
+
+                    </a>项目概览
+                </h2>
+                <p>下面是我们项目的文件目录树：</p>
+                <figure class="highlight">
+                <pre><code class="language-scss" data-lang="python">
+项目:.
+│   manage.py
+│   tree.txt
+│
+├───.idea
+│   │   encodings.xml
+│   │   misc.xml
+│   │   modules.xml
+│   │   tangpoemshow.iml
+│   │   vagrant.xml
+│   │   workspace.xml
+│   │
+│   ├───dictionaries
+│   │       Liangs.xml
+│   │
+│   └───inspectionProfiles
+└───app
+    │   data.py
+    │   views.py
+    │   __init__.py
+    │
+    ├───all_data_files
+    │   ├───shuowenjiezi
+    │   │       all-chars.txt
+    │   │
+    │   └───tangshicilin
+    │           adj.txt
+    │           n.txt
+    │           nl.txt
+    │           ns.txt
+    │           nt.txt
+    │           v.txt
+    │
+    ├───mycharts
+    │   │   constants.py
+    │   │   ShiRenGuanXi.py
+    │   │   ShuoWenJieZi.py
+    │   │   SiChouZhiLu.py
+    │   │   __init__.py
+    │
+    │
+    ├───static
+    │   ├───css
+    │   │       bootstrap.min.css
+    │   │       docs.min.css
+    │   │       github-markdown.css
+    │   │       normalize.css
+    │   │       patch.css
+    │   │       styles.css
+    │   │
+    │   ├───echarts
+    │   │       Afghanistan.js
+    │   │       Albania.js
+	(此处省略616个文件)
+    │   │       Zimbabwe.js
+    │   │
+    │   ├───images
+    │   │   │   favicon.ico
+    │   │   │
+    │   │   ├───about
+    │   │   │       jishu.png
+    │   │   │       poem.png
+    │   │   │       techstack.png
+    │   │   │
+    │   │   └───index
+    │   │           1.png
+    │   │           2.png
+    │   │           3.png
+    │   │           4.png
+    │   │           bootstrap.png
+    │   │           Echarts.png
+    │   │           FlaskLogo.png
+    │   │
+    │   ├───js
+    │   │       bootstrap.min.js
+    │   │       docs.min.js
+    │   │       ie-emulation-modes-warning.js
+    │   │       ie10-viewport-bug-workaround.js
+    │   │       jquery.min.js
+    │   │
+    │   └───pdf
+    │           des_words.pdf
+    │
+    ├───templates
+    │       404.html
+    │       500.html
+    │       about.html
+    │       base.html
+    │       bootstrapBase.html
+    │       index.html
+    │       readme.txt
+                </code></pre>
+                </figure>
+                <p>
+                    <code>manage.py</code>负责启动整个网站，其不包含任何逻辑代码，只负责引入<code>app</code>模块，启动<code>app</code>模块的<code>run()</code>函数；
+                    <code>app</code>文件夹内是整个项目的实际工作程序。
+                    <code>app</code>内包含数据文件夹<code>all_data_files</code>,<code>echarts</code>图表的生成文件夹<code>mycharts</code>,
+                    项目的静态文件<code>static</code>，项目的模板网页<code>templates</code>,
+                    项目数据的生成文件<code>data.py</code>,Flask的轮询文件<code>data.py</code>。</p>
+                <h2 id="我是ID2.2"><a class="anchorjs-link " href="#我是ID2.2"
+                                    aria-label="Anchor link for: third box sizing" data-anchorjs-icon=""
+                                    style="font-family: anchorjs-icons; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; line-height: inherit; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>
+                    <a class="anchorjs-link " href="#我是ID2.2" aria-label="Anchor link for: third box sizing"
+                       data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal;
+                                    font-variant-ligatures: normal; font-variant-caps: normal;
+                                    font-weight: normal; line-height: inherit; position: absolute;
+                                    margin-left: -1em; padding-right: 0.5em;">
+
+                    </a>数据来源与处理
+                </h2>
+                <img src="{{ url_for('static', filename='images/index/2.png') }}" alt=""
+                     class="img-responsive">
+                <img src="{{ url_for('static', filename='images/index/4.png') }}" alt=""
+                     class="img-responsive">
+                <p></p>
+                <h2 id="我是ID2.3"><a class="anchorjs-link " href="#我是ID2.3"
+                                    aria-label="Anchor link for: third box sizing" data-anchorjs-icon=""
+                                    style="font-family: anchorjs-icons; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; line-height: inherit; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>
+                    <a class="anchorjs-link " href="#我是ID2.3" aria-label="Anchor link for: third box sizing"
+                       data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal;
+                                    font-variant-ligatures: normal; font-variant-caps: normal;
+                                    font-weight: normal; line-height: inherit; position: absolute;
+                                    margin-left: -1em; padding-right: 0.5em;">
+
+                    </a>Flask
+                </h2>
+                <p>下面是<code>view.py</code></p>
+                <figure class="highlight">
+                <pre><code class="language-scss" data-lang="python">
+  from flask import render_template
+  import app.mycharts as new_charts
+  from . import app
+  from . import data
+
+  dataForShuoWenJieZi = data.get_data_shuowenjiezi()
+  dataForShiRenGuanXi=data.get_data_shirenguanxi()
+
+  @app.route("/")
+  def hello():
+      return render_template('index.html')
+
+  @app.route("/about")
+  def about():
+      return render_template('about.html')
+
+  @app.route('/shuowenjiezi')
+  def shuowenjiezi():
+      html, js = new_charts.ShuoWenJieZi.create_charts(dataForShuoWenJieZi)
+      return render_template('bootstrapBase.html', page_title='说文解字', theme='说文解字', theme_description='仓颉之初作书也，盖依类象形，故谓之文。其后形声相益，即谓之字。文者，物象之本；字者，言孳乳而寖多也。',
+                             mychart=html, script_list=js)
+
+  @app.errorhandler(404)
+  def page_not_found(e):
+      return render_template("404.html"), 404
+
+                </code></pre>
+                </figure>
+                <p>下面是<code>data.py</code></p>
+                <figure class="highlight">
+                <pre><code class="language-scss" data-lang="python">
+    def get_data_shuowenjiezi():
+        data_dict = {}
+        # 添加表一数据：
+        html_before = '''
+    	'''
+
+        html_after = '''
+        '''
+
+        words = []
+        values = []
+        with open(r'app\all_data_files\shuowenjiezi\all-chars.txt', encoding='utf-8') as f:
+            for line in f:
+                temp = line.split(',')
+                words.append(temp[0])
+                values.append(temp[1])
+        data_dict['charcloud'] = [html_before, html_after, words, values]
+
+
+        # 表二：
+        # html_before='''<p>test</p>'''
+        # html_after='''<p>test end</p>'''
+        data_dict['chartop10'] = [html_before, html_after, words[:10], values[:10]]
+        # 表三：
+        datalist = [['频次<=10', 2859], ['10<频次<=80', 1996], ['80<频次<=300', 1234], ['300<频次<=500', 403], ['500<频次<=700', 215],
+                    ['700<频次<=1000', 215], ['1000<频次<=2000', 309], ['2000<频次<=3000', 118], ['3000<频次<=5000', 95],
+                    ['5000<频次<=7000', 48], ['7000<频次<10000', 25], ['10000<频次<30000', 19]]
+        keys = [item[0] for item in datalist]
+        values = [item[1] for item in datalist]
+        # html_before = '''<p>test</p>'''
+        # html_after = '''<p>test end</p>'''
+        data_dict['frequency&times'] = [html_before, html_after, keys, values]
+
+        # 最后
+        print("get_data_shuowenjiezi √")
+        return data_dict
+                </code></pre>
+                </figure>
+                <h2 id="我是ID2.4"><a class="anchorjs-link " href="#我是ID2.4"
+                                    aria-label="Anchor link for: third box sizing" data-anchorjs-icon=""
+                                    style="font-family: anchorjs-icons; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; line-height: inherit; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>
+                    <a class="anchorjs-link " href="#我是ID2.4" aria-label="Anchor link for: third box sizing"
+                       data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal;
+                                    font-variant-ligatures: normal; font-variant-caps: normal;
+                                    font-weight: normal; line-height: inherit; position: absolute;
+                                    margin-left: -1em; padding-right: 0.5em;">
+
+                    </a>pyecharts
+                </h2>
+                <p></p>
+                <figure class="highlight">
+                <pre><code class="language-scss" data-lang="python">
+    from pyecharts import Bar, Line, Liquid, WordCloud, Pie, Overlap, Page, Style
+    from app.mycharts.constants import WIDTH, HEIGHT
+
+
+    def create_charts(data):
+        # data字典格式(三个表的情况下)：
+        # {'charcloud':[str:表一的前描述,str:表一的后描述,数据1,数据2,...,数据n],'...':[...]}
+        html = ''
+        page = Page()
+        style = Style(width=900, height=600)
+        # 本页面包含：1：所有字的词云charcloud(两个数据chars,values)、
+        # 表一：
+        # 获取表一的数据
+        html_before = data['charcloud'][0]
+        html_after = data['charcloud'][1]
+        chars = data['charcloud'][2]
+        values = data['charcloud'][3]
+        wordcloud = WordCloud("唐诗用字云图", **style.init_style)
+        wordcloud.add("字云", chars, values, word_size_range=[10, 100], shape='pentagon')
+        java_script = wordcloud.render_embed()
+        html += html_before + java_script + html_after
+        page.add(wordcloud)
+        # 表二：
+
+        # 表三:
+
+        # 最后
+        script = page.get_js_dependencies()
+        return html, script
+                </code></pre>
+                </figure>
+                <h2 id="我是ID2.5"><a class="anchorjs-link " href="#我是ID2.5"
+                                    aria-label="Anchor link for: third box sizing" data-anchorjs-icon=""
+                                    style="font-family: anchorjs-icons; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; line-height: inherit; position: absolute; margin-left: -1em; padding-right: 0.5em;"></a>
+                    <a class="anchorjs-link " href="#我是ID2.5" aria-label="Anchor link for: third box sizing"
+                       data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal;
+                                    font-variant-ligatures: normal; font-variant-caps: normal;
+                                    font-weight: normal; line-height: inherit; position: absolute;
+                                    margin-left: -1em; padding-right: 0.5em;">
+
+                    </a>bootstrap
+                </h2>
+                <a href="http://flask-bootstrap-zh.readthedocs.io/zh/latest/basic-usage.html#id3">flask-bootstarp使用介绍</a>
+            </div>
+
+            <!-- Cross link to new migration page -->
+            <div class="bs-callout bs-callout-info" id="migration">
+                <h4>python数据可视化作业</h4>
+                <p>小组成员：李华勇、申资卓、朱思齐、程玥。☞ <a href="{{ url_for('static', filename='pdf/des_words.pdf') }}">我们的github</a>^_^
+                </p>
+            </div>
+        </div>
+
+        <div class="col-md-3" role="complementary">
+            <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix-top">
+                <ul class="nav bs-docs-sidenav">
+                    <li>
+                        <a href="#我是ID1">项目简介</a>
+                        <ul class="nav">
+                            <li>
+                                <a href="#我是ID1.1">项目目标</a></li>
+                            <li>
+                                <a href="#我是ID1.2">小组成员</a></li>
+                             <li>
+                                <a href="#我是ID1.3">技术构成</a></li>
+                        </ul>
+                    </li>
+                     <li>
+                        <a href="#我是ID2">项目详细情况</a>
+                        <ul class="nav">
+                            <li>
+                                <a href="#我是ID2.1">项目概览</a></li>
+                            <li>
+                                <a href="#我是ID2.2">数据</a></li>
+                             <li>
+                                <a href="#我是ID2.3">Flask</a></li>
+                             <li>
+                                <a href="#我是ID2.4">pyEcharts</a></li>
+                             <li>
+                                <a href="#我是ID2.5">Bootstrap</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <a class="back-to-top" href="#top">
+                    返回顶部
+                </a>
+            </nav>
+        </div>
+
+    </div>
+</div>
+
+<!-- Footer
+================================================== -->
+<footer class="bs-docs-footer">
+    <div class="container">
+        <ul class="bs-docs-footer-links">
+            <li><a href="">GitHub 仓库</a></li>
+            <li><a href="">DCC</a></li>
+            <li><a href="">北京语言大学</a></li>
+            <li><a href="">关于</a></li>
+        </ul>
+       <p>本项目源码受 <a rel="license" href="" target="_blank">MIT</a>开源协议保护，文档受
+            <a rel="license" href=" target="_blank">CC BY 3.0</a> 开源协议保护。
+        </p>
+    </div>
+</footer>
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+<script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.min.js"><\/script>')</script>
+
+
+<script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+
+
+<script src="{{ url_for('static', filename='js/docs.min.js') }}"></script>
+
+
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="{{ url_for('static', filename='js/ie10-viewport-bug-workaround.js') }}"></script>
+
+<!-- Analytics
+================================================== -->
+<script type="text/javascript">
+    var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+    document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fbdb993b828cbe079a7fbc1a951f44726' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script src="http://hm.baidu.com/h.js?bdb993b828cbe079a7fbc1a951f44726" type="text/javascript"></script>
+<script src="http://hm.baidu.com/h.js?bdb993b828cbe079a7fbc1a951f44726" type="text/javascript"></script>
+
+<!-- 全局统计代码 -->
+<script type="text/javascript">
+    var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+    document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F079fac161efc4b2a6f31e80064f14e82' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script src="http://hm.baidu.com/h.js?079fac161efc4b2a6f31e80064f14e82" type="text/javascript"></script>
+<script src="http://hm.baidu.com/h.js?079fac161efc4b2a6f31e80064f14e82" type="text/javascript"></script>
+
+</body>
+</html>

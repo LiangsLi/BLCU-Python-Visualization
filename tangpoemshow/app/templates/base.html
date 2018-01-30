@@ -1,0 +1,88 @@
+{% extends "bootstrap/base.html" %}
+
+{% block title %}pyecharts - {{ title }}{% endblock %}
+
+{% block head %}
+    {{super()}}
+    <link rel="icon" href="{{ url_for('static', filename='images/favicon.ico')}}" type="image/x-coin">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css')}}" type="text/css">
+    <title>Proudly presented by ECharts</title>
+	{% for jsfile_name in script_list %}
+        <script src="static/echarts/{{ jsfile_name }}.js"></script>
+    {% endfor %}
+{% endblock %}
+
+{% block navbar %}
+    <div class="navbar navbar-inverse" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/">丝路上的唐诗</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-left">
+                    <li>
+                        <a href="#">首页</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="{{ url_for('bar') }}" class="dropdown-toggle" data-toggle="dropdown">全唐诗概览
+                            <ul class="dropdown-menu">
+                                <li><a href="{{ url_for('bar') }}">高频字词</a> </li>
+                                <li><a href="{{ url_for('line') }}">唐诗地理</a> </li>
+                                <li><a href="{{ url_for('scatter') }}">唐朝诗人</a> </li>
+                                <li><a href="{{ url_for('effectscatter') }}">修改</a> </li>
+                                <li><a href="{{ url_for('heatmap') }}">修改</a> </li>
+                            </ul>
+                        </a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">丝绸之路
+                            <ul class="dropdown-menu">
+                                <li><a href="{{ url_for('polar') }}">修改</a> </li>
+                                <li><a href="{{ url_for('parallel') }}">修改</a> </li>
+                            </ul>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">关于</a>
+                    </li>
+                    <li>
+                        <a href="{{ url_for('shuowenjiezi') }}">说文解字</a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#">中文</a>
+                    </li>
+                    <li>
+                        <a href="#">ENGLISH</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+      <button class="btn-info" onclick="onEditButtonClick()"><span class="glyphicon glyphicon-pencil"></span>Edit</button> in browsers
+          <script>
+            function onEditButtonClick(){
+                window.location.href="https://chfw.github.io/pyecharts.js-app/#https://raw.githubusercontent.com/chenjiandongx/pyecharts-app/master/app/charts/{{source_file}}.py";
+            }
+          </script>
+    </div>
+    <div class="my-charts">
+        {{ myechart|safe }}
+    </div>
+    <footer class="container-fluid foot-wrap">
+        <p align="center" style="margin-top: 20px;color:#878B91;">
+            Copyright &copy; 2017 DCC
+        </p>
+    </footer>
+{% endblock %}

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<!-- saved from url=(0433)file:///E:/Codes/%E5%94%90%E8%AF%97%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96/bootstrap%E6%A8%A1%E6%9D%BF/Bootstrap%20%E4%B8%AD%E6%96%87%E6%96%87%E6%A1%A3%20%C2%B7%20Bootstrap%20%E6%98%AF%E4%B8%96%E7%95%8C%E4%B8%8A%E6%9C%80%E6%B5%81%E8%A1%8C%E7%9A%84%E3%80%81%E7%A7%BB%E5%8A%A8%E8%AE%BE%E5%A4%87%E4%BC%98%E5%85%88%E7%9A%84%E3%80%81%E5%93%8D%E5%BA%94%E5%BC%8F%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6%E3%80%82.html#top -->
+<html lang="zh-CN">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Liangs">
+
+    <title>
+        数字唐诗
+    </title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+    <!-- Documentation extras -->
+    <link href="{{ url_for('static', filename='css/docs.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/patch.css') }}" rel="stylesheet">
+    <!--[if lt IE 9]><script src="../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="{{ url_for('static', filename='js/ie-emulation-modes-warning.js') }}"></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+  <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+    <!-- Favicons -->
+    <link rel="icon" href="{{ url_for('static', filename='images/favicon.ico') }}">
+    <script>
+        var _hmt = _hmt || [];
+    </script>
+    <style id="style-1-cropbar-clipper">/* Copyright 2014 Evernote Corporation. All rights reserved. */
+    .en-markup-crop-options {
+        top: 18px !important;
+        left: 50% !important;
+        margin-left: -100px !important;
+        width: 200px !important;
+        border: 2px rgba(255, 255, 255, .38) solid !important;
+        border-radius: 4px !important;
+    }
+
+    .en-markup-crop-options div div:first-of-type {
+        margin-left: 0px !important;
+    }
+    </style>
+</head>
+<body class="bs-docs-home">
+<a id="skippy" class="sr-only sr-only-focusable" href="#content">
+    <div class="container"><span class="skiplink-text">Skip to main content</span></div>
+</a>
+
+<!-- Docs master nav -->
+<header class="navbar navbar-static-top bs-docs-nav" id="top">
+    <div class="container">
+        <div class="navbar-header">
+            <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#bs-navbar"
+                    aria-controls="bs-navbar" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="/" class="navbar-brand">唐诗数字</a>
+        </div>
+        <nav id="bs-navbar" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li class="active">
+                    <a href="/"
+                       onclick="_hmt.push([&#39;_trackEvent&#39;, &#39;docv3-navbar&#39;, &#39;click&#39;, &#39;首页&#39;])">首页</a>
+                </li>
+                <li>
+                    <a href="{{ url_for('shuowenjiezi') }}"
+                       onclick="_hmt.push([&#40;_trackEvent&#40;, &#40;docv3-navbar&#40;, &#40;click&#40;, &#40;说文解字&#40;])">说文解字</a>
+                </li>
+                <li>
+                    <a href="{{ url_for('canghaicihua') }}"
+                       onclick="_hmt.push([&#39;_trackEvent&#39;, &#39;docv3-navbar&#39;, &#39;click&#39;, &#39;唐诗词林&#39;])">沧海词话</a>
+                </li>
+                <li>
+                    <a href="{{ url_for('shirenguanxi') }}"
+                       onclick="_hmt.push([&#39;_trackEvent&#39;, &#39;docv3-navbar&#39;, &#39;click&#39;, &#39;桃花潭水&#39;])">天涯比邻</a>
+                </li>
+                <li>
+                    <a href="{{ url_for('sichouzhilu') }}"
+                       onclick="_hmt.push([&#39;_trackEvent&#39;, &#39;docv3-navbar&#39;, &#39;click&#39;, &#39;关于我们&#39;])">丝绸唐韵</a>
+                </li>
+                <li>
+                    <a href="{{ url_for('about') }}"
+                       onclick="_hmt.push([&#39;_trackEvent&#39;, &#39;docv3-navbar&#39;, &#39;click&#39;, &#39;关于我们&#39;])">关于我们</a>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <!-- <li><a href="http://mb.bootcss.com" onclick="_hmt.push(['_trackEvent', 'docv3-navbar', 'click', 'themes'])" target="_blank">主题/模板</a></li> -->
+                <li><a href=""
+                       onclick="_hmt.push([&#39;_trackEvent&#39;, &#39;docv3-navbar&#39;, &#39;click&#39;, &#39;&#39;])"
+                       target="_blank">github</a></li>
+                <li><a href=""
+                       onclick="_hmt.push([&#39;_trackEvent&#39;, &#39;docv3-navbar&#39;, &#39;click&#39;, &#39;&#39;])"
+                       target="_blank">ENGLISH</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+<!-- Page content of course! -->
+<main class="bs-docs-masthead" id="content" tabindex="-1">
+    <div class="container">
+        <span class="bs-docs-booticon bs-docs-booticon-lg bs-docs-booticon-outline">诗</span>
+        <p class="lead">通过对《全唐诗》、CBDB数据库的语言文字的数据统计，研究分析唐诗用字用词的特点和感情色彩、唐代诗人的人际关系，研究丝绸之路上唐诗的特点变化和唐代主要商贸城市的风貌</p>
+        <p class="lead">
+            <a href="http://ctext.org/quantangshi/zhs" class="btn btn-outline-inverse btn-lg"
+               onclick="_hmt.push([&#39;_trackEvent&#39;, &#39;docv3-navbar&#39;, &#39;click&#39;, &#39;V3首页大图-下载Bootstrap按钮&#39;])">了解更多
+                全唐诗</a>
+        </p>
+        <p class="version">Python数据可视化，BLCU</p>
+    </div>
+</main>
+
+<div class="bs-docs-featurette">
+    <div class="container">
+        <h2 class="bs-docs-featurette-title">下面是项目的基础技术</h2>
+        <p class="lead">本项目后台基于<code>Flask</code>框架，数据显示部分使用<code>pyEcharts</code>，前端使用<code>Bootstrap</code>进行界面美化。</p>
+        <hr class="half-rule">
+        <div class="row">
+            <div class="col-sm-4">
+                <img src="{{ url_for('static', filename='images/index/bootstrap.png') }}" alt="bootstrap"
+                     class="img-responsive">
+                <h3>Bootstrap</h3>
+                <p><a href="https://getbootstrap.com/">Bootstrap</a>是一组用于网站和网络应用程序开发的开源前端框架，包括HTML、CSS及JavaScript的框架，提供字体排印、窗体、按钮、导航及其他各种组件及Javascript扩展，旨在使动态网页和Web应用的开发更加容易。</p>
+            </div>
+            <div class="col-sm-4">
+                <img src="{{ url_for('static', filename='images/index/Echarts.png') }}" alt="pyecharts"
+                     class="img-responsive">
+                <h3>PyEcharts</h3>
+                <p><a href="https://github.com/chenjiandongx/pyecharts">pyecharts</a>是一个用于生成 Echarts 图表的类库。Echarts 是百度开源的一个数据可视化 JS 库。用 Echarts 生成的图可视化效果非常棒，为了与 Python 进行对接，方便在 Python 中直接使用数据生成图。</p>
+            </div>
+            <div class="col-sm-4">
+                <img src="{{ url_for('static', filename='images/index/FlaskLogo.png') }}" alt="flask"
+                     class="img-responsive">
+                <h3>Flask</h3>
+                <p><a href="http://flask.pocoo.org/">Flask</a>是一个使用Python编写的轻量级Web应用框架。基于Werkzeug WSGI工具箱和Jinja2 模板引擎。Flask使用BSD授权。 Flask被称为“microframework”，因为它使用简单的核心，用extension增加其他功能。</p>
+            </div>
+        </div>
+        <hr class="half-rule">
+        <p class="lead">更多信息请查看我们的github页面</p>
+        <a href="" class="btn btn-outline btn-lg">查看 GitHub 项目主页</a>
+    </div>
+</div>
+
+<div class="bs-docs-featurette">
+    <div class="container">
+        <h2 class="bs-docs-featurette-title">本项目基于的开源项目</h2>
+        <p class="lead">本项目基于以下几个开源项目</p>
+        <hr class="half-rule">
+        <div class="row bs-docs-featured-sites">
+            <div class="col-xs-6 col-sm-3">
+                <a href="https://github.com/MrQianJinSi/poetry_analyzer" target="_blank" title="poetry_analyzer"
+                   onclick="_hmt.push([&#39;_trackEvent&#39;, &#39;doc-home-youzhan-img&#39;, &#39;click&#39;, &#39;Laravel中文网&#39;])">
+                    <img src="{{ url_for('static', filename='images/index/1.png') }}" alt="poetry_analyzer"
+                         class="img-responsive">
+                </a>
+            </div>
+            <div class="col-xs-6 col-sm-3">
+                <a href="https://github.com/hxgdzyuyi/tang_poetry" target="_blank" title="tang_poetry"
+                   onclick="_hmt.push([&#39;_trackEvent&#39;, &#39;doc-home-youzhan-img&#39;, &#39;click&#39;, &#39;Ghost中国&#39;])">
+                    <img src="{{ url_for('static', filename='images/index/2.png') }}" alt="tang_poetry"
+                         class="img-responsive">
+                </a>
+            </div>
+            <div class="col-xs-6 col-sm-3">
+                <a href="https://www.ltp-cloud.com/" target="_blank" title="语言技术平台(LTP) "
+                   onclick="_hmt.push([&#39;_trackEvent&#39;, &#39;doc-home-youzhan-img&#39;, &#39;click&#39;, &#39;Gulp中文网&#39;])">
+                    <img src="{{ url_for('static', filename='images/index/3.png') }}" alt="语言技术平台(LTP) "
+                         class="img-responsive">
+                </a>
+            </div>
+            <div class="col-xs-6 col-sm-3">
+                <a href="https://projects.iq.harvard.edu/cbdb/home" target="_blank" title="CBDB"
+                   onclick="_hmt.push([&#39;_trackEvent&#39;, &#39;doc-home-youzhan-img&#39;, &#39;click&#39;, &#39;Gurnt中文网&#39;])">
+                    <img src="{{ url_for('static', filename='images/index/4.png') }}" alt="CBDB" class="img-responsive">
+                </a>
+            </div>
+        </div>
+        <hr class="half-rule">
+
+        <p class="lead">感谢感谢感谢感谢感谢感谢感谢感谢</p>
+        <br>
+        <a href="#top" class="btn btn-outline btn-lg">返回顶部</a>
+    </div>
+</div>
+
+
+<!-- Footer
+================================================== -->
+<footer class="bs-docs-footer">
+    <div class="container">
+        <ul class="bs-docs-footer-links">
+            <li><a href="">GitHub 仓库</a></li>
+            <li><a href="">DCC</a></li>
+            <li><a href="">北京语言大学</a></li>
+            <li><a href="">关于</a></li>
+        </ul>
+       <p>本项目源码受 <a rel="license" href="" target="_blank">MIT</a>开源协议保护，文档受
+            <a rel="license" href=" target="_blank">CC BY 3.0</a> 开源协议保护。
+        </p>
+    </div>
+</footer>
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+<script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.min.js"><\/script>')</script>
+
+
+<script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+
+
+<script src="{{ url_for('static', filename='js/docs.min.js') }}"></script>
+
+
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="{{ url_for('static', filename='js/ie10-viewport-bug-workaround.js') }}"></script>
+
+<!-- Analytics
+================================================== -->
+<script type="text/javascript">
+    var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+    document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fbdb993b828cbe079a7fbc1a951f44726' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script src="http://hm.baidu.com/h.js?bdb993b828cbe079a7fbc1a951f44726" type="text/javascript"></script>
+<script src="http://hm.baidu.com/h.js?bdb993b828cbe079a7fbc1a951f44726" type="text/javascript"></script>
+
+<!-- 全局统计代码 -->
+<script type="text/javascript">
+    var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+    document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F079fac161efc4b2a6f31e80064f14e82' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script src="http://hm.baidu.com/h.js?079fac161efc4b2a6f31e80064f14e82" type="text/javascript"></script>
+<script src="http://hm.baidu.com/h.js?079fac161efc4b2a6f31e80064f14e82" type="text/javascript"></script>
+
+
+</body>
+</html>
