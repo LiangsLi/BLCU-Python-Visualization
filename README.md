@@ -1,5 +1,6 @@
 # Python-可视化 数字唐诗project介绍
 > 备注：这是研究生一年级上学期Python统计分析与可视化的大作业
+![词云](./images/词云.png)
 ## 小组成员以及分工：
 1. **李华勇（201721198598）**：负责网站搭建和项目协调分工
 2. **朱思齐（201721198500）**：负责添加`Pyecharts`图表
@@ -119,15 +120,25 @@
 2.  借助**中国历代人物传记资料库CBDB**研究唐代诗人的人际关系
 3.  对**丝绸之路**沿线唐诗进行分类分析，研究丝绸之路上唐诗的特点变化和唐代主要商贸城市的风貌
 
+![dataset](./images/数据1.png)
+
+![dataset](./images/数据2.png)
+
 ### 技术介绍：
 本项目后台基于Flask框架，数据显示部分使用pyEcharts，前端使用Bootstrap进行界面美化。下面简单介绍下这几个技术：
 #### Flask
+![flask](./images/FlaskLogo.png)
+
 Flask是一个使用Python编写的轻量级Web应用框架。基于Werkzeug WSGI(PythonWeb服务器网关接口（Python Web Server Gateway Interface，缩写为WSGI) 是Python应用程序或框架和Web服务器之间的一种接口，已经被广泛接受, 它已基本达成它的可移植性方面的目标) 工具箱和Jinja2 模板引擎。 Flask使用BSD授权。 Flask也被称为“microframework”，因为它使用简单的核心， 用extension增加其他功能。Flask没有默认使用的数据库、窗体验证工具。 然而，Flask保留了扩增的弹性，可以用Flask-extension加入这些功能：ORM、窗体验证工具、文件上传、 各种开放式身份验证技术。
 #### pyEcharts
+![pyecharts](./images/Echarts.png)
+
 ECharts，缩写来自Enterprise Charts，商业级数据图表，一个纯Javascript的图表库， 可以流畅的运行在PC和移动设备上，兼容当前绝大部分浏览器 （IE6/7/8/9/10/11，chrome，firefox，Safari等），底层依赖轻量级的Canvas类库ZRender， 提供直观，生动，可交互，可高度个性化定制的数据可视化图表。创新的拖拽重计算、数据视图、 值域漫游等特性大大增强了用户体验，赋予了用户对数据进行挖掘、整合的能力。
 
 pyecharts 是一个用于生成 Echarts 图表的类库。 使用pyEcharts可以直接将Python代码转化为Echarts的JavaScript代码，简化Echarts和Python项目的集成。 pyecharts可以非常方便地和Flask集成，完全可以使用Flask调用pyecharts动态生成图表同时插入其他html元素，返回给浏览器。
 #### Bootstrap
+![bootstrap](./images/bootstrap.png)
+
 Bootstrap是一组用于网站和网络应用程序开发的开源前端（所谓“前端”，指的是展现给最终用户的界面。 与之对应的“后端”是在服务器上面运行的代码）框架，包括HTML、CSS及JavaScript的框架，提供字体排印、 窗体、按钮、导航及其他各种组件及Javascript扩展，旨在使动态网页和Web应用的开发更加容易。
 
 要在Flask中使用BootStrap需要借助Flask-Bootstrap扩展。 Flask-Bootstrap 把 Bootstrap 打包进一个 扩展，这个扩展主要由一个叫 “bootstrap”的蓝本（blueprint）组成。它也可以创建链接从一个CDN上引用Bootstrap。
