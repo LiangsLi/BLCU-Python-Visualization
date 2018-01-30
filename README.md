@@ -1,5 +1,5 @@
-# Python-可视化 数字唐诗project介绍
-> 备注：这是研究生一年级上学期Python统计分析与可视化的大作业
+# Python-可视化 数字唐诗project介绍 
+> 备注：这是研究生一年级上学期Python统计分析与可视化的大作业 :new_moon_with_face:
 
 ![词云](./images/词云.png)
 ## 小组成员以及分工：
