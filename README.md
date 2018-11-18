@@ -2,6 +2,18 @@
 > 备注：这是研究生一年级上学期Python统计分析与可视化的大作业 :new_moon_with_face:
 
 ![词云](./images/词云.png)
+
+## 依赖环境
+**由于pyecharts升级，现有项目文件在新的pyecharts环境下执行会出现异常，如想查看本项目的效果，请按照下面的依赖版本安装依赖环境：**
+
+| Package    |     Version |
+| ------------ | ---------- | 
+| jupyter-pip  |   0.3.1 |
+| Flask         |  0.12.2 |
+| Flask-Bootstrap | 3.3.7.1 |
+| pyecharts     |  0.3.1 |
+
+
 ## 小组成员：
 <略去>
 ## github文件介绍：
@@ -11,15 +23,6 @@
 	* `app文件夹`：网站文件
 	* ....
 
-## 依赖环境
-**由于pyecharts升级，现有项目文件在新的pyecharts环境下执行会出现异常，如想查看本项目的效果，请按照下面的依赖版本安装依赖环境：**
-
-| Package    |     Version |
-| ------------ | ---------- | 
-| jupyter-pip  |   0.3.1 |
-| Flask         |  0.12.2 |
-| Flask-Bootst | 3.3.7.1 |
-| pyecharts     |  0.3.1 |
 
 项目文件树如下：
 ```bash
